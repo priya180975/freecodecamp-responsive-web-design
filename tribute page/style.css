@@ -1,0 +1,53 @@
+#main{
+	background-color:#ccc;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+#title{
+	color:#333;
+	font-weight: bolder;
+	font-size: 27px;
+}
+
+#title span{
+	font-size: 18px;
+}
+
+#img-div{
+	margin: 20px;
+	padding: 10px;
+	background: #ddd;
+}
+
+img{
+	position: relative;
+	padding: 4px;
+	width: 85%;
+}
+
+#img-caption{
+	font-size: 16px;
+	color: #333;
+}
+
+#tribute-info{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: left;
+}
+
+#quote{
+	font-size: 13px;	
+}
+
+
+@media(max-width:1000px)
+{
+	#tribute-info
+	{
+	width: 90%;
+	}
+}

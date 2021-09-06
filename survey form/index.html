@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey form</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header></header>
+        <div class="main">
+        <h1 id="title">College Survey</h1>
+        <p id="description">
+            The Survey form collects information about the reviews and suggestion on the facilities provided by the college 
+        </p>
+        <form id="survey-form" action="" >
+            <label id="name-label">
+                <span>Name </span><span class="req"><sup>*</sup></span><br>
+                 <input type="text" id="name" placeholder="Enter your Name" required>
+            </label>
+            <br>
+            <label  id="email-label">
+                <span>Email Address</span><span class="req"><sup>*</sup></span><br>
+                <input type="email" id="email" placeholder="Enter email address" required>
+            </label>
+            <br>
+            <label id="number-label">
+                <span>Age </span><span class="req"><sup>*</sup></span>
+                <input type="number" id="number" placeholder="age" min=10 max=100 required>
+            </label>
+            <span>Phone Number </span><span class="req"><sup>*</sup></span>
+            <input type="number" id="phone" placeholder="enter phone number" required>
+            <br>
+            <span>Select Your Course :</span>
+            <select id="dropdown">
+                <option value="FYIT">FYBSc.IT</option>
+                <option value="SYIT">SYBSc.IT</option>
+                <option value="TYIT">TYBSc.IT</option>
+            </select>   
+            <br>
+            <div class="exp">
+                 <span>Overall Learning Experience :</span><br>
+                <div>
+                <input type="radio" name="rating" value="great">Great<br>
+                 <input type="radio" name="rating" value="good">Good<br>
+                 <input type="radio" name="rating" value="ok">Ok<br>
+                <input type="radio" name="rating" value="need improvement">Need Improvement<br>
+                <input type="radio" name="rating" value="bad">Bad<br>
+                </div>
+            </div>
+            <div class="exp">
+                 <span>Overall Campus Experience : </span><br>
+                <div>
+                 <input type="radio" name="rating1" value="great">Great<br>
+                 <input type="radio" name="rating1" value="good">Good<br>
+                 <input type="radio" name="rating1" value="ok">Ok<br>
+                <input type="radio" name="rating1" value="need improvement">Need Improvement<br>
+                <input type="radio" name="rating1" value="bad">Bad<br>
+                </div>
+            </div>
+            <div id="imp">
+                <span>Need Improvement in : </span><br>
+                <input type="checkbox" value="Teaching">Teaching Faculty<br>
+                <input type="checkbox" value="Staff">Staff<br>
+                <input type="checkbox" value="syllabus">Syllabus<br>
+                <input type="checkbox" value="Campus">Campus<br>
+                <input type="checkbox" value="library">Library Facilities<br>
+                <input type="checkbox" value="Other">Other <input type="text" placeholder="Mention here"><br>
+                
+            </div>
+            <br>
+
+            <textarea placeholder="Any Suggestion"></textarea><br>
+            
+            <input type="submit" id="submit">
+         </form>
+        <footer>
+            Contact the form owner for any issue
+            Mail us <a href="mailto:?subject=Issue Related to form" > here </a>
+        </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
